@@ -120,7 +120,7 @@ class Kakao {
         $c->submit($url, $param);
         $c->setcookies();
         $r = $c->results;
-        if(strpos($r, "token") === false) throw new Error("Incorrect Object template.");
+        if(strpos($r, "token") === false) throw new Exception("Incorrect Object template.");
         $this->cookies = $c->cookies;
         $template = htmlspecialchars_decode(explode("\"", explode("value=\"", $r)[1])[0]);
         $csrf = explode("'", explode("token='", $r)[1])[0];
