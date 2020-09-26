@@ -74,8 +74,8 @@ class Kakao {
         $url = "https://accounts.kakao.com/weblogin/authenticate.json";
         $c->referer = $referer;
         $c->cookies = $this->cookies;
-        $id = shell_exec("scriptRhinoEngine.exe strKeyAes.js str \"$id\" key \"$aesKey\"");
-        $password = shell_exec("scriptRhinoEngine.exe strKeyAes.js str \"$password\" key \"$aesKey\"");
+        $id = shell_exec("scriptRhinoEngine.exe cryptoaes.js str \"$id\" key \"$aesKey\"");
+        $password = shell_exec("scriptRhinoEngine.exe cryptoaes.js str \"$password\" key \"$aesKey\"");
         $param = array(
             "os" => "web",
             "webview_v" => "2",
