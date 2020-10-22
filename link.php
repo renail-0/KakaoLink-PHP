@@ -3,7 +3,7 @@
 /**
  *  ----- [KakaoLink PHP Sending Module] --------------
  * |                                                   |
- * |    > @author  renail184                      <    |
+ * |    > @author  renail-0                       <    |
  * |    > @version 1.0                            <    |
  * |                                                   |
  * |    > @see     Snoopy HTTP Parser             <    |
